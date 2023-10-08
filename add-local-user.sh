@@ -23,9 +23,9 @@ read -p 'Enter the password to create: ' PASSWORD
 
 # Create the user with password
 if useradd -c "${COMMENT}" -m "${USER_NAME}"
-then 
+then
   echo "Use ${USER_NAME} created successfully."
-else 
+else
   echo "Error : Failed to create user ${USER_NAME}."
   exit 1
 fi
@@ -53,4 +53,4 @@ echo "Username: ${USER_NAME}"
 echo "Password: ${PASSWORD}"
 echo "Host: $hostname"
 
-exit 0 
+exit 0
